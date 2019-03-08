@@ -1,14 +1,115 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	font-size: 40px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+.calArea {
+	width: 800px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 150px;
+	border: 1px solid;
+	grid-template-rows: 100px 100px 100px 100px 100px;
+	grid-template-areas:
+		"clear divide multiply minus"
+		"seven eight nine plus"
+		"four five six plus"
+		"one two three equal"
+		"zero zero dot equal";
+}
+.App {
+	border: 1px solid;
+}
+#display {
+	border: 1px solid;
+	height: 100px;
+	text-align: end;
+}
+#display > span {
+	vertical-align: -webkit-baseline-middle;
+}
+button {
+	border: 1px solid;
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 40px;
+}
+
+#clear {
+	grid-area: clear;
+}
+
+#divide {
+	grid-area: divide;
+}
+
+#multiply {
+	grid-area: multiply;
+}
+
+#minus {
+	grid-area: minus;
+}
+
+#plus {
+	grid-area: plus;
+}
+
+#equal {
+	grid-area: equal;
+}
+
+#dot {
+	grid-area: dot;
+}
+
+#zero {
+	grid-area: zero;
+}
+
+#one {
+	grid-area: one;
+}
+
+#two {
+	grid-area: two;
+}
+
+#three {
+	grid-area: three;
+}
+
+#four {
+	grid-area: four;
+}
+
+#five {
+	grid-area: five;
+}
+
+#six {
+	grid-area: six;
+}
+
+#seven {
+	grid-area: seven;
+}
+
+#eight {
+	grid-area: eight;
+}
+
+#nine {
+	grid-area: nine;
 }
